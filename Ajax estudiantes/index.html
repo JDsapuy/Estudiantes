@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estudiantes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Estudiantes</h1>
+    <div class="mb-03" class="container">
+        <form id="estudiante-form">
+            <div class="mb-02">
+            <label class="form-label" for="codigo-input">Código:</label>
+            <input placeholder="Código del estudiante" class="form-control form-control-sm" type="text" id="codigo-input" name="codigo" required><br>
+            </div>
+            <div class="mb-02">
+            <label class="form-label" for="nombre-input">Nombre:</label>
+            <input placeholder="Nombres del estudiante" class="form-control form-control-sm" type="text" id="nombre-input" name="nombre" required><br>
+            </div>
+            <div class="mb-02">
+            <label class="form-label" for="apellido-input">Apellido:</label>
+            <input placeholder="Apellidos del estudiante" class="form-control form-control-sm" type="text" id="apellido-input" name="apellido" required><br>
+            </div>
+            <div class="mb-02">
+            <label class="form-label" for="curso-input">Curso:</label>
+            <input placeholder="Curso en el que esta el estudiante" class="form-control form-control-sm" type="text" id="curso-input" name="curso" required><br>
+            </div>
+            <div class="mb-02">
+            <label class="form-label" for="nota1-input">Nota 1:</label>
+            <input placeholder="Nota 1 ejemplo '5.0'" class="form-control form-control-sm" type="number" id="nota1-input" name="nota1" step="0.1" required><br>
+            </div>
+            <div class="mb-02">
+            <label class="form-label" for="nota2-input">Nota 2:</label>
+            <input placeholder="Nota 2 ejemplo '4.0'" class="form-control form-control-sm" type="number" id="nota2-input" name="nota2" step="0.1" required><br>
+            </div>
+            <div class="mb-02">
+            <label class="form-label" for="nota3-input">Nota 3:</label>
+            <input placeholder="Nota 3 ejemplo '3.0'" class="form-control form-control-sm" type="number" id="nota3-input" name="nota3" step="0.1" required><br>
+            <input class="form-control" type="submit" value="Agregar Estudiante">
+            </div>
+        </form>
+    </div>
+    <h2>Estudiantes Registrados:</h2>
+    <ul id="estudiantes-list"></ul>
+
+    <h2>Estudiante con Mayor Promedio:</h2>
+    <p id="mayor-promedio-info"></p>
+
+    <script src="./app.js/app.js"></script>
+</body>
+</html>
+
+
